@@ -1,0 +1,62 @@
+Index: autossh.c
+===================================================================
+--- autossh.c	(revision 38)
++++ autossh.c	(working copy)
+@@ -179,7 +179,7 @@
+ 	if (code) {
+ 		fprintf(stderr, "\n");
+ 		fprintf(stderr, 
+-		    "    -M specifies monitor port. May be overridden by"
++		    "    -M specifies monitor port. Overrides the"
+ 		    " environment\n"
+ 		    "       variable AUTOSSH_PORT. 0 turns monitoring"
+ 		    " loop off.\n"
+@@ -273,14 +273,17 @@
+ 	 */
+ 	get_env_args();
+ 
+-	/*
++	/* if we got it from the environment */
++	if (env_port)
++		writep = env_port;
++	
++    /*
+ 	 * We accept all ssh args, and quietly pass them on
+ 	 * to ssh when we call it.
+ 	 */
+ 	while ((ch = getopt(argc, argv, OPTION_STRING)) != -1) {
+ 		switch(ch) {
+ 		case 'M':
+-			if (!env_port)
+ 				writep = optarg;
+ 			break;
+ 		case 'V':
+@@ -304,9 +307,6 @@
+ 		}
+ 	}
+ 
+-	/* if we got it from the environment */
+-	if (env_port)
+-		writep = env_port;
+ 
+ 	/*
+ 	 * We must at least have a monitor port and a remote host.
+@@ -400,7 +400,7 @@
+ 				continue;
+ 			}
+ 		}
+- 		if (wp && env_port && !done_fwds) {
++ 		if (wp && !done_fwds) {
+ 			add_arg("-L");
+ 			add_arg(wmbuf);
+ 			if (!echop) {
+@@ -408,7 +408,8 @@
+ 				add_arg(rmbuf);
+ 			}
+ 			done_fwds = 1;
+-		} else if (!sawargstop && argv[i][0] == '-' && argv[i][1] == 'M') {
++		} 
++		if (!sawargstop && argv[i][0] == '-' && argv[i][1] == 'M') {
+ 			if (argv[i][2] == '\0')
+ 				i++;
+ 			if (wp && !done_fwds) {

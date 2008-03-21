@@ -1,0 +1,31 @@
+#!/bin/sh
+# little wrapper to choose a random port for autossh, falling back to 21021 
+
+echo "$@" | egrep -q -- '-f?M ?[0-9]+' # backward compatibility, skip guess if -M is passed
+
+if [ $? -gt 0 ] && [ -z "$AUTOSSH_PORT" ]; then 
+	tcpstat="/proc/net/tcp" 
+	portguess="21021"
+	if [ -r "/dev/urandom" ] && [ -r "$tcpstat" ]; then
+		for t in $(seq 1 42); do
+			# get a random hex
+			randport=$( od -x -N2 -An /dev/urandom | tr -d ' ' )
+			
+			# increase it a little "bit"
+			randport=$( /usr/bin/printf "%04x" $(( 0x$randport | 0x8000 )) )
+			randport_1=$( /usr/bin/printf "%04x" $(( 0x$randport + 1 )) )
+
+			# check if port is in use, possibile race condition between here
+			# and the exec 
+			egrep -q "^[0-9 ]+: [0-9A-F]{8}:$randport" $tcpstat || \
+			egrep -q "^[0-9 ]+: [0-9A-F]{8}:$randport_1" $tcpstat  
+			if [ "$?" -eq 1 ]; then
+				portguess=$(( 0x$randport ))
+				break	
+			fi
+		done
+	fi
+	export AUTOSSH_PORT="$portguess"
+fi
+
+exec /usr/lib/autossh/autossh "$@"

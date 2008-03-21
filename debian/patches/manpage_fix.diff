@@ -1,0 +1,37 @@
+Index: autossh.1
+===================================================================
+--- autossh.1	(revision 37)
++++ autossh.1	(working copy)
+@@ -49,7 +49,7 @@
+ port may be specified for a remote echo service that will echo back
+ the test data. This avoids the congestion and the aggravation of
+ making sure all the port numbers on the remote machine do not
+-collide. The loop-of -forwardings method remains available for
++collide. The loop-of-forwardings method remains available for
+ situations where using an echo service may not be possible.
+ .Pp
+ .Sh CONTROLLING SSH
+@@ -60,6 +60,7 @@
+ .Nm
+ tries to distinguish the manner of death of the ssh process it
+ is monitoring and act appropriately. The rules are:
++.El
+ .Bl -tag -width Ds
+ .It 1.
+ If the ssh process exited normally (for example, someone typed
+@@ -200,6 +201,7 @@
+ causes 
+ .Nm 
+ to display its version number and exit.
++.El
+ .Sh ENVIRONMENT
+ Other than the flag to set the connection monitoring port,
+ .Nm 
+@@ -252,6 +254,7 @@
+ Sets the connection monitoring port. Mostly in case ssh appropriates
+ -M at some time. But because of this possible use, AUTOSSH_PORT
+ overrides the -M flag. A value of 0 turns the monitoring function off.
++.El
+ .Sh AUTHOR
+ .Nm
+ was written by Carson Harding.

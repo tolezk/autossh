@@ -1,0 +1,13 @@
+Index: Makefile.in
+===================================================================
+--- Makefile.in	(revision 37)
++++ Makefile.in	(working copy)
+@@ -6,7 +6,7 @@
+ 
+ SSH=		@path_ssh@
+ 
+-prefix=		@prefix@
++prefix=		${DESTDIR}@prefix@
+ exec_prefix=	@exec_prefix@
+ bindir=		@bindir@
+ datadir=	@datadir@
