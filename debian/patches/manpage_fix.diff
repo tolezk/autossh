@@ -11,14 +11,6 @@ Index: autossh.1
  situations where using an echo service may not be possible.
  .Pp
  .Sh CONTROLLING SSH
-@@ -60,6 +60,7 @@
- .Nm
- tries to distinguish the manner of death of the ssh process it
- is monitoring and act appropriately. The rules are:
-+.El
- .Bl -tag -width Ds
- .It 1.
- If the ssh process exited normally (for example, someone typed
 @@ -200,6 +201,7 @@
  causes 
  .Nm 

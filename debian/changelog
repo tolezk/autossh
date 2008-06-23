@@ -1,3 +1,9 @@
+autossh (1.4a-4) unstable; urgency=low
+
+  * debian/patches/manpage_fix.diff: fix spurious .El (Closes: #447654)
+
+ -- Filippo Giunchedi <filippo@debian.org>  Mon, 23 Jun 2008 13:46:39 +0200
+
 autossh (1.4a-3) unstable; urgency=low
 
   * get command line handling of -M right.
