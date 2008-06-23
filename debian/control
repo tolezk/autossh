@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 5), cdbs
 Homepage: http://www.harding.motd.ca/autossh/
 VCS-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/autossh/trunk
 VCS-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/autossh/trunk
-Standards-Version: 3.7.2
+Standards-Version: 3.8.0
 
 Package: autossh
 Architecture: any
