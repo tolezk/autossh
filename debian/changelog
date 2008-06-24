@@ -2,8 +2,9 @@ autossh (1.4b-1) unstable; urgency=low
 
   * New upstream release
   * debian/patches/manpage_fix.diff: fix spurious .El (Closes: #447654)
+  * Report failure when unable to find a tunnel port (Closes: #443087) 
 
- -- Filippo Giunchedi <filippo@debian.org>  Mon, 23 Jun 2008 13:50:50 +0200
+ -- Filippo Giunchedi <filippo@debian.org>  Tue, 24 Jun 2008 13:01:25 +0200
 
 autossh (1.4a-3) unstable; urgency=low
 
