@@ -11,6 +11,14 @@ Index: autossh.1
  situations where using an echo service may not be possible.
  .Pp
  .Sh CONTROLLING SSH
+@@ -60,7 +60,6 @@
+ .Nm
+ tries to distinguish the manner of death of the ssh process it
+ is monitoring and act appropriately. The rules are:
+-.Bl -tag -width Ds
+ .It 1.
+ If the ssh process exited normally (for example, someone typed
+ "exit" in an interactive session), 
 @@ -200,6 +201,7 @@
  causes 
  .Nm 
@@ -19,7 +27,7 @@ Index: autossh.1
  .Sh ENVIRONMENT
  Other than the flag to set the connection monitoring port,
  .Nm 
-@@ -252,6 +254,7 @@
+@@ -256,6 +258,7 @@
  Sets the connection monitoring port. Mostly in case ssh appropriates
  -M at some time. But because of this possible use, AUTOSSH_PORT
  overrides the -M flag. A value of 0 turns the monitoring function off.
