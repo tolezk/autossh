@@ -1,3 +1,9 @@
+autossh (1.4b-2) UNRELEASED; urgency=low
+
+  * Include autossh-argv0 shamelessly copied/adapted from ssh-argv0
+
+ -- Filippo Giunchedi <filippo@debian.org>  Sun, 19 Oct 2008 17:33:05 +0200
+
 autossh (1.4b-1) unstable; urgency=low
 
   * New upstream release
