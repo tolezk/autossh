@@ -3,8 +3,10 @@ autossh (1.4b-2) UNRELEASED; urgency=low
   * Include autossh-argv0 shamelessly copied/adapted from ssh-argv0
   * Add debian/patches/040_manpage_debian.diff to reference README.Debian for
     autossh debian-specific behavior (Closes: #505659)
+  * Install logcheck ignore rules into
+    /etc/logcheck/ignore.d.workstation/autossh (Closes: #505659)
 
- -- Filippo Giunchedi <filippo@debian.org>  Sun, 19 Oct 2008 17:33:05 +0200
+ -- Filippo Giunchedi <filippo@debian.org>  Sun, 10 May 2009 11:38:57 +0200
 
 autossh (1.4b-1) unstable; urgency=low
 
