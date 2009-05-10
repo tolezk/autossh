@@ -18,3 +18,4 @@ Description: Automatically restart SSH sessions and tunnels
  (Reliable SSH Tunnel), but implemented in C. Connection monitoring is done
  using a loop of port forwardings. It backs off on the rate of connection
  attempts when experiencing rapid failures such as connection refused.
+Tag: implemented-in::c, network::hiavailability, protocol::ssh, role::program, use::login, use::monitor
