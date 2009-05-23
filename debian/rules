@@ -21,5 +21,5 @@ install/autossh::
 	rm -rf $(CURDIR)/debian/autossh/usr/share/examples/
 	rm -rf $(CURDIR)/debian/autossh/usr/share/doc/autossh/CHANGES
 
-	install -m644 $(CURDIR)/debian/logcheck_ignore.d.workstation \
-		/etc/logcheck/ignore.d.workstation/autossh
+	install -d -m644 $(CURDIR)/debian/logcheck_ignore.d.workstation \
+		$(CURDIR)/debian/autossh/etc/logcheck/ignore.d.workstation/autossh
