@@ -7,11 +7,11 @@ Build-Depends: debhelper (>= 5), cdbs
 Homepage: http://www.harding.motd.ca/autossh/
 VCS-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/autossh/trunk
 VCS-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/autossh/trunk
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 
 Package: autossh
 Architecture: any
-Depends: ${shlibs:Depends}, openssh-client | ssh-client
+Depends: ${shlibs:Depends}, ${misc:Depends}, openssh-client | ssh-client
 Description: Automatically restart SSH sessions and tunnels
  autossh is a program to start an instance of ssh and monitor it, restarting it
  as necessary should it die or stop passing traffic. The idea is from rstunnel

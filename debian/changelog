@@ -5,8 +5,10 @@ autossh (1.4b-2) unstable; urgency=low
     autossh debian-specific behavior (Closes: #523861)
   * Install logcheck ignore rules into
     /etc/logcheck/ignore.d.workstation/autossh (Closes: #505659)
+  * Add ${misc:Depends} as lintian requested
+  * Update to S-V 3.8.1, no changes needed
 
- -- Filippo Giunchedi <filippo@debian.org>  Sun, 10 May 2009 11:38:57 +0200
+ -- Filippo Giunchedi <filippo@debian.org>  Sat, 23 May 2009 19:08:46 +0200
 
 autossh (1.4b-1) unstable; urgency=low
 
