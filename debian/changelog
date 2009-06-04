@@ -1,3 +1,9 @@
+autossh (1.4b-3) UNRELEASED; urgency=low
+
+  * Cosmetic changes to autossh wrapper
+
+ -- Filippo Giunchedi <filippo@debian.org>  Thu, 04 Jun 2009 11:16:41 +0200
+
 autossh (1.4b-2) unstable; urgency=low
 
   * Include autossh-argv0 shamelessly copied/adapted from ssh-argv0
