@@ -6,6 +6,7 @@ include /usr/share/cdbs/1/rules/simple-patchsys.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_CONFIGURE_EXTRA_FLAGS := --with-ssh=/usr/bin/ssh 
+CFLAGS += -fPIC
 
 install/autossh::
 	cp $(CURDIR)/autossh $(CURDIR)/debian/autossh/usr/lib/autossh/autossh

@@ -1,8 +1,9 @@
-autossh (1.4b-3) UNRELEASED; urgency=low
+autossh (1.4b-3) unstable; urgency=low
 
   * Cosmetic changes to autossh wrapper
+  * Fix FTBFS on mips/mipsel by adding -fPIC to CFLAGS (Closes: #531937)
 
- -- Filippo Giunchedi <filippo@debian.org>  Thu, 04 Jun 2009 11:16:41 +0200
+ -- Filippo Giunchedi <filippo@debian.org>  Fri, 05 Jun 2009 19:08:51 +0200
 
 autossh (1.4b-2) unstable; urgency=low
 
