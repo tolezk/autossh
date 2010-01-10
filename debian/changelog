@@ -1,3 +1,30 @@
+autossh (1.4b-4) unstable; urgency=low
+
+  [ Thorsten Glaser ]
+  * debian/patches/000_configure_with-ssh_fix.diff: Remove, create
+    a proper fix in debian/patches/000_configure_fix.diff (the closing
+    parenthesis of AC_HELP_STRING was placed wrong)
+  * debian/patches/000_configure_fix.diff: Add proper check for the
+    existence of __progname (taken from OpenSSH-portable), replace
+    upstream’s check for declaration when what we really need to see
+    is existence of the symbol (Closes: #531937)
+  * debian/control: Remove “Tag:” header lintian complains about,
+    see the following mailing list thread for the reason:
+    - http://lists.alioth.debian.org/pipermail/debtags-devel/2007-January/001567.html
+    - http://lists.alioth.debian.org/pipermail/debtags-devel/2007-February/001593.html
+  * Fix a couple of lintian warnings:
+    - debian/README.Debian: spelling-error-in-readme-debian
+    - debian/patches/030_manpage_fix.diff,
+      debian/patches/040_manpage_debian.diff: hyphen-used-as-minus-sign
+  * Bump Standards-Version to 3.8.3, no relevant changes
+  * Call autoconf and autoheader to regenerate buildsystem after patching
+  * Fix spelling error in debian/patches/040_manpage_debian.diff
+
+  [ Filippo Giunchedi ]
+  * Merge patch from Thorsten Glaser fixing also an RC bug, thanks!
+
+ -- Filippo Giunchedi <filippo@debian.org>  Sun, 10 Jan 2010 11:21:00 +0100
+
 autossh (1.4b-3) unstable; urgency=low
 
   * Cosmetic changes to autossh wrapper

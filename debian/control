@@ -3,11 +3,12 @@ Section: net
 Priority: optional
 Maintainer: Filippo Giunchedi <filippo@debian.org>
 Uploaders: martin f. krafft <madduck@debian.org>
-Build-Depends: debhelper (>= 5), cdbs
+Build-Depends: debhelper (>= 5), cdbs, autoconf (>= 2.59)
+Build-Conflicts: autoconf2.13
 Homepage: http://www.harding.motd.ca/autossh/
 VCS-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/autossh/trunk
 VCS-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/autossh/trunk
-Standards-Version: 3.8.1
+Standards-Version: 3.8.3
 
 Package: autossh
 Architecture: any
@@ -18,4 +19,3 @@ Description: Automatically restart SSH sessions and tunnels
  (Reliable SSH Tunnel), but implemented in C. Connection monitoring is done
  using a loop of port forwardings. It backs off on the rate of connection
  attempts when experiencing rapid failures such as connection refused.
-Tag: implemented-in::c, network::hiavailability, protocol::ssh, role::program, use::login, use::monitor

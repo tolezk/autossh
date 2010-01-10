@@ -1,14 +1,15 @@
-diff -Nur -x '*.orig' -x '*~' trunk/autossh.1 trunk.new/autossh.1
---- trunk/autossh.1	2009-05-10 12:10:35.000000000 +0200
-+++ trunk.new/autossh.1	2009-05-10 12:12:07.000000000 +0200
-@@ -257,6 +257,10 @@
- -M at some time. But because of this possible use, AUTOSSH_PORT
- overrides the -M flag. A value of 0 turns the monitoring function off.
+--- autossh.1~	2010-01-01 13:31:50.000000000 +0000
++++ autossh.1	2010-01-01 13:31:52.000000000 +0000
+@@ -262,6 +262,12 @@ overrides the
+ .Fl M
+ flag. A value of 0 turns the monitoring function off.
  .El
 +.Sh DEBIAN-SPECIFIC BEHAVIOR
 +The debian version of autossh uses a wrapper to automatically select a free
-+monitoring port and -M overrides AUTOSSH_PORT, see
-+/usr/share/doc/autossh/README.Debian for further informations.
++monitoring port and
++.Fl M
++overrides AUTOSSH_PORT, see
++/usr/share/doc/autossh/README.Debian for further information.
  .Sh AUTHOR
  .Nm
  was written by Carson Harding.
