@@ -1,5 +1,5 @@
---- autossh.1~	2010-01-01 13:31:50.000000000 +0000
-+++ autossh.1	2010-01-01 13:31:52.000000000 +0000
+--- autossh-1.4b/autossh.1~	2010-01-01 13:31:50.000000000 +0000
++++ autossh-1.4b/autossh.1	2010-01-01 13:31:52.000000000 +0000
 @@ -262,6 +262,12 @@ overrides the
  .Fl M
  flag. A value of 0 turns the monitoring function off.

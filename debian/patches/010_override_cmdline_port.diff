@@ -1,7 +1,7 @@
-Index: autossh.c
+Index: autossh-1.4b/autossh.c
 ===================================================================
---- autossh.c	(revision 38)
-+++ autossh.c	(working copy)
+--- autossh-1.4b/autossh.c	(revision 38)
++++ autossh-1.4b/autossh.c	(working copy)
 @@ -179,7 +179,7 @@
  	if (code) {
  		fprintf(stderr, "\n");

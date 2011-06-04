@@ -1,7 +1,7 @@
-Index: Makefile.in
+Index: autossh-1.4b/Makefile.in
 ===================================================================
---- Makefile.in	(revision 37)
-+++ Makefile.in	(working copy)
+--- autossh-1.4b/Makefile.in	(revision 37)
++++ autossh-1.4b/Makefile.in	(working copy)
 @@ -6,7 +6,7 @@
  
  SSH=		@path_ssh@
