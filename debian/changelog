@@ -1,3 +1,9 @@
+autossh (1.4b-5) UNRELEASED; urgency=low
+
+  * New Maintainers (Closes: #605423)
+
+ -- Axel Beckert <abe@debian.org>  Sat, 04 Jun 2011 21:47:00 +0200
+
 autossh (1.4b-4) unstable; urgency=low
 
   [ Thorsten Glaser ]

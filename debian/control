@@ -1,8 +1,8 @@
 Source: autossh
 Section: net
 Priority: optional
-Maintainer: Filippo Giunchedi <filippo@debian.org>
-Uploaders: martin f. krafft <madduck@debian.org>
+Maintainer: Axel Beckert <abe@debian.org>
+Uploaders: Franziska Lichtblau <rhalina@old-forest.org>
 Build-Depends: debhelper (>= 5), cdbs, autoconf (>= 2.59)
 Build-Conflicts: autoconf2.13
 Homepage: http://www.harding.motd.ca/autossh/
