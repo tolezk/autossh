@@ -5,6 +5,7 @@ autossh (1.4b-5) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.9.2 (no changes)
   * Add "Enhances: openssh-client, ssh-client"
   * Move from cdbs+simple-patchsys to debhelper+quilt
+    + Refreshed all patches
 
  -- Axel Beckert <abe@debian.org>  Sat, 04 Jun 2011 21:47:00 +0200
 

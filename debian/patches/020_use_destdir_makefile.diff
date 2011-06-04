@@ -1,7 +1,7 @@
-Index: autossh-1.4b/Makefile.in
+Index: autossh/Makefile.in
 ===================================================================
---- autossh-1.4b/Makefile.in	(revision 37)
-+++ autossh-1.4b/Makefile.in	(working copy)
+--- autossh.orig/Makefile.in	2011-06-05 00:10:01.000000000 +0200
++++ autossh/Makefile.in	2011-06-05 00:26:15.000000000 +0200
 @@ -6,7 +6,7 @@
  
  SSH=		@path_ssh@

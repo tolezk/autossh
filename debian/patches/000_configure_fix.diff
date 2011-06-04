@@ -3,10 +3,11 @@ Fix for things upstream’s configure.ac does wrong:
   the AC_ARG_WITH(ssh, …) from actually doing anything
 • check for existence, not declaration, of __progname
 
-diff -pruN autossh-1.4b~/configure.ac autossh-1.4b/configure.ac
---- autossh-1.4b~/configure.ac	2008-04-11 20:47:46.000000000 +0000
-+++ autossh-1.4b/configure.ac	2010-01-01 12:59:09.000000000 +0000
-@@ -16,9 +16,8 @@ if test "$ac_compiler_gnu" = "yes"; then
+Index: autossh/configure.ac
+===================================================================
+--- autossh.orig/configure.ac	2011-06-05 00:10:01.000000000 +0200
++++ autossh/configure.ac	2011-06-05 00:26:02.000000000 +0200
+@@ -16,9 +16,8 @@
  fi
  
  AC_ARG_WITH(ssh,
@@ -18,7 +19,7 @@ diff -pruN autossh-1.4b~/configure.ac autossh-1.4b/configure.ac
  )
  if test -z "$ac_cv_path_ssh"; then
  	AC_PATH_PROG([ssh], [ssh])
-@@ -118,9 +117,29 @@ AC_CHECK_LIB(nsl, gethostbyname)
+@@ -118,9 +117,29 @@
  AC_CHECK_LIB(socket, connect)
  
  # Other checks

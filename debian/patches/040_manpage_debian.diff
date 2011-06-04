@@ -1,6 +1,8 @@
---- autossh-1.4b/autossh.1~	2010-01-01 13:31:50.000000000 +0000
-+++ autossh-1.4b/autossh.1	2010-01-01 13:31:52.000000000 +0000
-@@ -262,6 +262,12 @@ overrides the
+Index: autossh/autossh.1
+===================================================================
+--- autossh.orig/autossh.1	2011-06-05 00:26:19.000000000 +0200
++++ autossh/autossh.1	2011-06-05 00:26:23.000000000 +0200
+@@ -262,6 +262,12 @@
  .Fl M
  flag. A value of 0 turns the monitoring function off.
  .El
