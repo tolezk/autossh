@@ -6,8 +6,8 @@ Uploaders: Franziska Lichtblau <rhalina@old-forest.org>
 Build-Depends: debhelper (>= 5), cdbs, autoconf (>= 2.59)
 Build-Conflicts: autoconf2.13
 Homepage: http://www.harding.motd.ca/autossh/
-VCS-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/autossh/trunk
-VCS-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/autossh/trunk
+VCS-Git: git://anonscm.debian.org/collab-maint/autossh.git
+VCS-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/autossh.git
 Standards-Version: 3.8.3
 
 Package: autossh
