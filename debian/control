@@ -8,7 +8,7 @@ Build-Conflicts: autoconf2.13
 Homepage: http://www.harding.motd.ca/autossh/
 VCS-Git: git://anonscm.debian.org/collab-maint/autossh.git
 VCS-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/autossh.git
-Standards-Version: 3.8.3
+Standards-Version: 3.9.2
 
 Package: autossh
 Architecture: any
