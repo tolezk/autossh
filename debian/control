@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Axel Beckert <abe@debian.org>
 Uploaders: Franziska Lichtblau <rhalina@old-forest.org>
-Build-Depends: debhelper (>= 7), autoconf (>= 2.59), autotools-dev, quilt
+Build-Depends: debhelper (>= 7), autoconf (>= 2.59), autotools-dev, quilt, autotools-dev
 Build-Conflicts: autoconf2.13
 Homepage: http://www.harding.motd.ca/autossh/
 Vcs-Git: git://anonscm.debian.org/collab-maint/autossh.git
