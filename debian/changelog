@@ -4,7 +4,6 @@ autossh (1.4b-5) UNRELEASED; urgency=low
     + Move to Git (new Vcs-* headers)
   * Bump Standards-Version to 3.9.2 (no changes)
   * Add "Enhances: openssh-client, ssh-client"
-  * Build-Depend on autotools-dev for config.{sub,guess}
   * Move from cdbs+simple-patchsys to debhelper+quilt
     + Refreshed all patches and added descriptions
     + Update build dependencies appropriately
