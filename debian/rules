@@ -22,6 +22,7 @@ config.status: configure
 	dh_autotools-dev_updateconfig
 	# Add here commands to configure the package.
 	./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs"
+	sed -e 's/-lnsl//g' -i Makefile
 
 
 build: build-stamp

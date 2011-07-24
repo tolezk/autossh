@@ -16,6 +16,7 @@ autossh (1.4b-5) UNRELEASED; urgency=low
   * Remove deletion of no more created directories and files
   * Install (slightly modified) example script rscreen to /usr/bin
     (LP: #410357)
+  * Do not link against libnsl (fixes dpkg-shlibdeps warning)
 
  -- Axel Beckert <abe@debian.org>  Sat, 04 Jun 2011 21:47:00 +0200
 
