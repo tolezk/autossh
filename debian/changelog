@@ -8,6 +8,7 @@ autossh (1.4b-5) UNRELEASED; urgency=low
     + Refreshed all patches
     + Update build dependencies appropriately
     + Install autossh and autossh-argv0 via dh_install
+  * Remove creation of not distributed symlink ssh-arg0.1.gz
 
  -- Axel Beckert <abe@debian.org>  Sat, 04 Jun 2011 21:47:00 +0200
 
