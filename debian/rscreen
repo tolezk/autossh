@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# Script to use autossh to open up a remote screen session, or
+# reconnect to an existing one. Based on autossh's original rscreen
+# example script as installed on Debian systems into
+# /usr/share/doc/autossh/rscreen, but with more generally usable
+# defaults
+#
+if [ -z "$1" ]; then
+	echo "usage: `basename $0` <host>"
+	exit 1
+fi
+
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval `ssh-agent -s`
+    ssh-add
+fi
+
+autossh -t "$@" "screen -Rd"
