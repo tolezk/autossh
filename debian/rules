@@ -15,7 +15,7 @@ endif
 
 include /usr/share/quilt/quilt.make
 
-xonfigure: patch
+configure: patch
 
 config.status: configure
 	dh_testdir
