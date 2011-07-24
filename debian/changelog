@@ -1,4 +1,4 @@
-autossh (1.4b-5) UNRELEASED; urgency=low
+autossh (1.4b-5) unstable; urgency=low
 
   * New Maintainers (Closes: #605423)
     + Move to Git (new Vcs-* headers)
@@ -17,7 +17,7 @@ autossh (1.4b-5) UNRELEASED; urgency=low
   * Do not link against libnsl (fixes dpkg-shlibdeps warning)
   * Add README.source from /usr/share/doc/quilt/ to make Lintian happy
 
- -- Axel Beckert <abe@debian.org>  Sat, 04 Jun 2011 21:47:00 +0200
+ -- Axel Beckert <abe@debian.org>  Mon, 25 Jul 2011 01:24:55 +0200
 
 autossh (1.4b-4) unstable; urgency=low
 
