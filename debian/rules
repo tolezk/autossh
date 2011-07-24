@@ -59,6 +59,9 @@ install: build
 	install -m0755 $(CURDIR)/debian/autossh_wrapper \
 		$(CURDIR)/debian/autossh/usr/bin/autossh
 
+	ln -s ssh-argv0.1.gz \
+		$(CURDIR)/debian/autossh/usr/share/man/man1/autossh-argv0.1.gz
+
 	dh_installlogcheck
 
 # Build architecture-independent files here.

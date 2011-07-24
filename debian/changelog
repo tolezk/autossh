@@ -11,7 +11,6 @@ autossh (1.4b-5) UNRELEASED; urgency=low
     + Install logcheck stuff via dh_installlogcheck
     + Use dh_autotools-dev_*config instead of manually handling
       config.{sub,guess}
-  * Remove creation of not distributed symlink ssh-arg0.1.gz
   * Remove deletion of no more created directories and files
   * Install (slightly modified) example script rscreen to /usr/bin
     (LP: #410357)
