@@ -1,3 +1,5 @@
+Fix some stuff in the man page. (Should be better sent to upstream. :-)
+
 Index: autossh/autossh.1
 ===================================================================
 --- autossh.orig/autossh.1	2011-06-05 00:09:59.000000000 +0200

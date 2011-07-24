@@ -1,3 +1,5 @@
+Support for $DESTDIR in the Makefile.
+
 Index: autossh/Makefile.in
 ===================================================================
 --- autossh.orig/Makefile.in	2011-06-05 00:10:01.000000000 +0200

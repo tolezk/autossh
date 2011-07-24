@@ -1,3 +1,5 @@
+Switches priority of -M commandline option and $AUTOSSH_PORT environment variable.
+
 Index: autossh/autossh.c
 ===================================================================
 --- autossh.orig/autossh.c	2011-06-05 00:10:01.000000000 +0200
