@@ -68,10 +68,7 @@ install: build
 	rm -rf $(CURDIR)/debian/autossh/usr/share/examples/
 	rm -rf $(CURDIR)/debian/autossh/usr/share/doc/autossh/CHANGES
 
-	install -D -m644 $(CURDIR)/debian/logcheck_ignore.d.workstation \
-		$(CURDIR)/debian/autossh/etc/logcheck/ignore.d.workstation/autossh
-
-
+	dh_installlogcheck
 
 # Build architecture-independent files here.
 binary-indep: install

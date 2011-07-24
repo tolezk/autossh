@@ -8,6 +8,7 @@ autossh (1.4b-5) UNRELEASED; urgency=low
     + Refreshed all patches and added descriptions
     + Update build dependencies appropriately
     + Install autossh and autossh-argv0 via dh_install
+    + Install logcheck stuff via dh_installlogcheck
   * Remove creation of not distributed symlink ssh-arg0.1.gz
   * Install (slightly modified) example script rscreen to /usr/bin
     (LP: #410357)
