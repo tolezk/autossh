@@ -17,6 +17,7 @@ autossh (1.4b-5) UNRELEASED; urgency=low
   * Install (slightly modified) example script rscreen to /usr/bin
     (LP: #410357)
   * Do not link against libnsl (fixes dpkg-shlibdeps warning)
+  * Add README.source from /usr/share/doc/quilt/ to make Lintian happy
 
  -- Axel Beckert <abe@debian.org>  Sat, 04 Jun 2011 21:47:00 +0200
 
