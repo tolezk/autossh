@@ -59,14 +59,12 @@ install: build
 
 	# Add here commands to install the package into debian/autossh.
 	#$(MAKE) prefix=$(CURDIR)/debian/autossh/usr install
-	cp $(CURDIR)/autossh $(CURDIR)/debian/autossh/usr/lib/autossh/autossh
+	dh_install
 	chown root.root $(CURDIR)/debian/autossh/usr/lib/autossh/autossh
 
 	install -m0755 $(CURDIR)/debian/autossh_wrapper \
 		$(CURDIR)/debian/autossh/usr/bin/autossh
 
-	install -m0755 $(CURDIR)/debian/autossh-argv0 \
-		$(CURDIR)/debian/autossh/usr/bin/autossh-argv0
 	ln -s ssh-argv0.1.gz \
 		$(CURDIR)/debian/autossh/usr/share/man/man1/autossh-argv0.1.gz
 
