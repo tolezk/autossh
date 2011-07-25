@@ -1,3 +1,10 @@
+autossh (1.4b-6) unstable; urgency=low
+
+  * Build-Depend on openssh-client to allow configure to find the path to
+    the ssh binary.
+
+ -- Axel Beckert <abe@debian.org>  Mon, 25 Jul 2011 02:28:28 +0200
+
 autossh (1.4b-5) unstable; urgency=low
 
   * New Maintainers (Closes: #605423)
