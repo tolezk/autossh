@@ -61,6 +61,8 @@ install: build
 
 	ln -s ssh-argv0.1.gz \
 		$(CURDIR)/debian/autossh/usr/share/man/man1/autossh-argv0.1.gz
+	ln -s rscreen $(CURDIR)/debian/autossh/usr/bin/rtmux
+	ln -s rscreen $(CURDIR)/debian/autossh/usr/bin/ruscreen
 
 	dh_installlogcheck
 
