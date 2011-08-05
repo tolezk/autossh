@@ -23,3 +23,11 @@ Copyright:
   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
   OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
   ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+debian/rscreen is
+
+ Copyright (C) Carson Harding, 2002.
+ Copyright (C) Axel Beckert, 2011.
+
+and licensed under the same terms as autossh itself and the original
+rscreen by Carson Harding.

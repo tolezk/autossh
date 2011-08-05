@@ -1,8 +1,9 @@
 autossh (1.4b-7) UNRELEASED; urgency=low
 
-  * Make rscreen to also work with tmux.
+  * Make debian/rscreen to also work with tmux.
     + Install symbolic links rtmux and ruscreen (for enforcing UTF-8) to
       rscreen
+    + Mention debian/rscreen in debian/copyright.
 
  -- Axel Beckert <abe@debian.org>  Fri, 05 Aug 2011 14:20:59 +0200
 
