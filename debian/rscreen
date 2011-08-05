@@ -27,7 +27,10 @@
 
 BASENAME=`basename $0`
 usage() {
-	echo "usage: $BASENAME <host>"
+	echo "Usage: $BASENAME [autossh or ssh options] <host>"
+	echo
+	echo 'If $RSCREEN_COMMAND is set, it will be used instead of screen or tmux.'
+	echo 'Use this feature if you want to supply additional screen options or tmux commands.'
 }
 
 if [ -z "$1" ]; then
