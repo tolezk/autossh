@@ -27,10 +27,15 @@
 
 BASENAME=`basename $0`
 usage() {
-	echo "Usage: $BASENAME [autossh or ssh options] <host>"
-	echo
-	echo 'If $RSCREEN_COMMAND is set, it will be used instead of screen or tmux.'
-	echo 'Use this feature if you want to supply additional screen options or tmux commands.'
+	echo <<EOF
+Usage: $BASENAME [autossh or ssh options] <host>
+
+If \$RSCREEN_COMMAND is set (either in the environment, in
+/etc/${BASENAME}rc, or in ~/.${BASENAME}rc), it will be used instead of screen
+or tmux.  Use this feature if you want to supply additional screen
+options or tmux commands. (Using \$RTMUX_COMMAND does not work!)
+
+EOF
 }
 
 if [ -z "$1" ]; then
@@ -39,6 +44,14 @@ if [ -z "$1" ]; then
 elif [ "$1" = "-h" -o "$1" = "--help" ]; then
 	usage
 	exit 0
+fi
+
+if [ -r /etc/${BASENAME}rc ]; then
+    . /etc/${BASENAME}rc
+fi
+
+if [ -r ~/.${BASENAME}rc ]; then
+    . ~/.${BASENAME}rc
 fi
 
 if [ -z "$SSH_AUTH_SOCK" ]; then
