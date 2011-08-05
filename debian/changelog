@@ -1,3 +1,9 @@
+autossh (1.4b-7) UNRELEASED; urgency=low
+
+  * Make rscreen to also work with tmux.
+
+ -- Axel Beckert <abe@debian.org>  Fri, 05 Aug 2011 14:20:59 +0200
+
 autossh (1.4b-6) unstable; urgency=low
 
   * Build-Depend on openssh-client to allow configure to find the path to

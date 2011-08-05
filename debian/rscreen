@@ -6,8 +6,10 @@
 # /usr/share/doc/autossh/rscreen, but with more generally usable
 # defaults
 #
+
+BASENAME=`basename $0`
 if [ -z "$1" ]; then
-	echo "usage: `basename $0` <host>"
+	echo "usage: $BASENAME <host>"
 	exit 1
 fi
 
@@ -16,4 +18,14 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     ssh-add
 fi
 
-autossh -t "$@" "screen -Rd"
+if [ -n "$RSCREEN_COMMAND" ]; then
+    exec autossh -t "$@" "$RSCREEN_COMMAND"
+elif [ "$BASENAME" = "rtmux" ]; then
+    exec autossh -t "$@" "tmux a || tmux new"
+elif [ "$BASENAME" = "ruscreen" ]; then
+    # screen with explicit UTF-8 setting
+    exec autossh -t "$@" "screen -RdU"
+else
+    # Fall back to normal screen
+    exec autossh -t "$@" "screen -Rd"
+fi
