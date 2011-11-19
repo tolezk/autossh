@@ -1,4 +1,3 @@
-000_configure_fix.diff
 010_override_cmdline_port.diff
 020_use_destdir_makefile.diff
 030_manpage_fix.diff

@@ -1,6 +1,7 @@
 autossh (1.4c-1) UNRELEASED; urgency=low
 
   * New upstream bugfix release
+    - Drop 000_configure_with-ssh_fix.diff (applied upstream)
   * Make debian/rscreen to also work with tmux.
     + Install symbolic links rtmux and ruscreen (for enforcing UTF-8) to
       rscreen
