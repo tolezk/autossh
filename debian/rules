@@ -25,8 +25,9 @@ config.status: configure
 	sed -e 's/-lnsl//g' -i Makefile
 
 
-build: build-stamp
-
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
 build-stamp: config.status
 	dh_testdir
 
