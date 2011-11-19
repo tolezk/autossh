@@ -1,5 +1,6 @@
-autossh (1.4b-7) UNRELEASED; urgency=low
+autossh (1.4c-1) UNRELEASED; urgency=low
 
+  * New upstream bugfix release
   * Make debian/rscreen to also work with tmux.
     + Install symbolic links rtmux and ruscreen (for enforcing UTF-8) to
       rscreen
@@ -8,7 +9,7 @@ autossh (1.4b-7) UNRELEASED; urgency=low
     ~/.${BASENAME}rc
   * Make debian/rscreen honour -h and --help, make usage message more verbose.
 
- -- Axel Beckert <abe@debian.org>  Fri, 05 Aug 2011 17:01:52 +0200
+ -- Axel Beckert <abe@debian.org>  Sat, 19 Nov 2011 02:40:48 +0100
 
 autossh (1.4b-6) unstable; urgency=low
 
