@@ -1,4 +1,4 @@
-autossh (1.4c-1) UNRELEASED; urgency=low
+autossh (1.4c-1) unstable; urgency=low
 
   * New upstream bugfix release
     - Drop patch 000_configure_with-ssh_fix.diff (applied upstream)
@@ -18,7 +18,7 @@ autossh (1.4c-1) UNRELEASED; urgency=low
     ~/.${BASENAME}rc
   * Make debian/rscreen honour -h and --help, make usage message more verbose.
 
- -- Axel Beckert <abe@debian.org>  Sat, 19 Nov 2011 02:40:48 +0100
+ -- Axel Beckert <abe@debian.org>  Sat, 19 Nov 2011 03:41:58 +0100
 
 autossh (1.4b-6) unstable; urgency=low
 
