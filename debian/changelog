@@ -8,6 +8,8 @@ autossh (1.4c-1) UNRELEASED; urgency=low
       applied upstream, refresh the rest.
   * Add recommended build-arch and build-indep targets to debian/rules,
     fixes lintian warning debian-rules-missing-recommended-target.
+  * Add lintian override for package-contains-broken-symlink (as that
+    symlink points to a file from a dependency)
   * Make debian/rscreen to also work with tmux.
     + Install symbolic links rtmux and ruscreen (for enforcing UTF-8) to
       rscreen
