@@ -1,6 +1,7 @@
 autossh (1.4c-2) UNRELEASED; urgency=low
 
   * Merge debian/autossh.dirs and debian/dirs
+  * Rename autossh.lintian-overrides to lintian-overrides
 
  -- Axel Beckert <abe@debian.org>  Wed, 25 Apr 2012 14:39:04 +0200
 
