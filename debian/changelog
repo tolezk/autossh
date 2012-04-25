@@ -1,3 +1,9 @@
+autossh (1.4c-2) UNRELEASED; urgency=low
+
+  * Merge debian/autossh.dirs and debian/dirs
+
+ -- Axel Beckert <abe@debian.org>  Wed, 25 Apr 2012 14:39:04 +0200
+
 autossh (1.4c-1) unstable; urgency=low
 
   * New upstream bugfix release
