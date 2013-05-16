@@ -8,6 +8,9 @@ autossh (1.4c-2) UNRELEASED; urgency=low
     - dh_installchangelogs will guess at what file is the upstream
       changelog if none is specified
     - dh_auto_{configure,build} pass dpkg-buildflags automatically
+  * Revamp debian/rules:
+    - Use dh_auto_{configure,build,clean}
+    - Drop manual DEB_HOST_GNU_TYPE and DEB_BUILD_GNU_TYPE handling.
 
  -- Axel Beckert <abe@debian.org>  Wed, 25 Apr 2012 14:39:04 +0200
 
