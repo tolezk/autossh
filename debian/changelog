@@ -2,11 +2,12 @@ autossh (1.4c-2) UNRELEASED; urgency=low
 
   * Merge debian/autossh.dirs and debian/dirs
   * Rename autossh.lintian-overrides to lintian-overrides
-  * Bump debhelper compatibility to 7 to make use of the following
+  * Bump debhelper compatibility to 9 to make use of the following
     features:
     - dh_clean will delete toplevel *-stamp files
     - dh_installchangelogs will guess at what file is the upstream
       changelog if none is specified
+    - dh_auto_{configure,build} pass dpkg-buildflags automatically
 
  -- Axel Beckert <abe@debian.org>  Wed, 25 Apr 2012 14:39:04 +0200
 
