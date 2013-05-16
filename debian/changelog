@@ -18,6 +18,7 @@ autossh (1.4c-2) UNRELEASED; urgency=low
   * Add patch to properly pass LDFLAGS.
     - Fixes lintian warning hardening-no-relro.
   * Bump Standards-Version to 3.9.4 (no changes)
+  * Apply wrap-and-sort.
 
  -- Axel Beckert <abe@debian.org>  Wed, 25 Apr 2012 14:39:04 +0200
 
