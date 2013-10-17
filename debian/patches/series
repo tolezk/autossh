@@ -3,4 +3,3 @@
 022_pass_ldflags.diff
 030_manpage_fix.diff
 040_manpage_debian.diff
-050_manpage_dash_M_example.diff

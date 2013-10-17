@@ -1,6 +1,7 @@
 autossh (1.4c-3) UNRELEASED; urgency=low
 
-  * Add patch to fix -M example in man-page. Thanks Rhalina!
+  * Fix -M example in man-page. (Was introduced by 030_manpage_fix.diff.)
+    Thanks Rhalina!
 
  -- Axel Beckert <abe@debian.org>  Thu, 17 Oct 2013 20:17:03 +0200
 

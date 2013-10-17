@@ -36,7 +36,7 @@ Index: autossh/autossh.1
 -receive it back on the port above. For example, if you specify "-M
 -20000", 
 +receive it back on the port above. For example, if you specify
-+.Dq Fl M 20000 ,
++.Dq Fl M\ 20000 ,
  .Nm
  will set up forwards so that it can send data on port
  20000 and receive it back on 20001.
