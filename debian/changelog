@@ -2,6 +2,7 @@ autossh (1.4c-3) UNRELEASED; urgency=low
 
   * Fix -M example in man-page. (Was introduced by 030_manpage_fix.diff.)
     Thanks Rhalina!
+  * Fix --with autotools_dev usage (c.f. #731248)
 
  -- Axel Beckert <abe@debian.org>  Thu, 17 Oct 2013 20:17:03 +0200
 
