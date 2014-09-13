@@ -1,11 +1,12 @@
-autossh (1.4c-3) UNRELEASED; urgency=low
+autossh (1.4d-1) UNRELEASED; urgency=low
 
+  * New upstream release.
   * Fix -M example in man-page. (Was introduced by 030_manpage_fix.diff.)
     Thanks Rhalina!
   * Logcheck: Also ignore restart and timeout messages (LP: #1282447)
   * Bump Standards-Version to 3.9.5 (no changes)
 
- -- Axel Beckert <abe@debian.org>  Thu, 17 Oct 2013 20:17:03 +0200
+ -- Axel Beckert <abe@debian.org>  Sat, 13 Sep 2014 11:12:56 +0200
 
 autossh (1.4c-2) unstable; urgency=low
 
