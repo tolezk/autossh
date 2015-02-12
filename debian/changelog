@@ -1,3 +1,10 @@
+autossh (1.4e-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+    + Refresh patches 030_manpage_fix.diff and 040_manpage_debian.diff.
+
+ -- Axel Beckert <abe@debian.org>  Fri, 13 Feb 2015 00:54:38 +0100
+
 autossh (1.4d-1) unstable; urgency=medium
 
   * New upstream release.
