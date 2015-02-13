@@ -1,11 +1,11 @@
-autossh (1.4e-1) UNRELEASED; urgency=medium
+autossh (1.4e-1) experimental; urgency=low
 
   * New upstream release.
     + Refresh patches 030_manpage_fix.diff and 040_manpage_debian.diff.
   * Declare compliance with Debian Policy 3.9.6 (no changes needed)
   * Convert debian/copyright to machine-readable DEP5 format.
 
- -- Axel Beckert <abe@debian.org>  Fri, 13 Feb 2015 00:54:38 +0100
+ -- Axel Beckert <abe@debian.org>  Fri, 13 Feb 2015 23:44:01 +0100
 
 autossh (1.4d-1) unstable; urgency=medium
 
