@@ -19,7 +19,7 @@ Copyright: 2002-2010 Filippo Giunchedi <filippo@debian.org>
            2011-2015 Axel Beckert <abe@debian.org>
 License: autossh
 
-Files: debian/patches/030_manpage_fix.diff
+Files: debian/patches/030_manpage_fix.diff debian/patches/040_manpage_debian.diff
 Copyright: 2008-2010 Filippo Giunchedi <filippo@debian.org>
            2010      Thorsten Glaser <tg@mirbsd.org>
            2011-2015 Axel Beckert <abe@debian.org>
