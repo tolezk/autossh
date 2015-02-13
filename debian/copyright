@@ -10,7 +10,7 @@ License: autossh
 Files: configure.ac
 Copyright: 2002-2015 Carson Harding <harding@motd.ca>
            1999-2004 Damien Miller
-License: autossh and ISC-Damien-Miller-Flavour
+License: autossh and ISC-OpenBSD-Flavour
 Comment: Most of the file is autossh licensed except where state
  otherwise inside the file
 
@@ -23,7 +23,7 @@ Files: debian/patches/030_manpage_fix.diff debian/patches/040_manpage_debian.dif
 Copyright: 2008-2010 Filippo Giunchedi <filippo@debian.org>
            2010      Thorsten Glaser <tg@mirbsd.org>
            2011-2015 Axel Beckert <abe@debian.org>
-License: autossh and autossh or ISC-Damien-Miller-Flavour or MirOS or ISC-MirOS-Flavour
+License: autossh and autossh or ISC-OpenBSD-Flavour or MirOS or ISC-MirOS-Flavour
 Comment: All changes not containing code from commit b1bc0f59 are only
  autossh-licensed. All changes in and derivating from commit b1bc0f59
  are quadruple-licensed.
@@ -50,7 +50,7 @@ License: autossh
  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-License: ISC-Damien-Miller-Flavour
+License: ISC-OpenBSD-Flavour
  Permission to use, copy, modify, and distribute this software for any
  purpose with or without fee is hereby granted, provided that the above
  copyright notice and this permission notice appear in all copies.
@@ -62,6 +62,8 @@ License: ISC-Damien-Miller-Flavour
  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+Comment: See also
+ http://cvsweb.openbsd.org/cgi-bin/cvsweb/~checkout~/src/share/misc/license.template?content-type=text/plain
 
 License: ISC-MirOS-Flavour
  Permission to use, copy, modify, and/or distribute this software for any
@@ -93,3 +95,4 @@ License: MirOS
  of dealing in the work, even if advised of the possibility of such
  damage or existence of a defect, except proven that it results out
  of said person’s immediate fault when using the work as intended.
+Comment: Source is https://www.mirbsd.org/MirOS-Licence
