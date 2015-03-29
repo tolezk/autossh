@@ -27,7 +27,7 @@
 
 BASENAME=`basename $0`
 usage() {
-	echo <<EOF
+	cat <<EOF
 Usage: $BASENAME [autossh or ssh options] <host>
 
 If \$RSCREEN_COMMAND is set (either in the environment, in

@@ -1,3 +1,9 @@
+autossh (1.4e-2) UNRELEASED; urgency=medium
+
+  * Fix --help option of rscreen (Closes: #781440)
+
+ -- Axel Beckert <abe@debian.org>  Sun, 29 Mar 2015 13:08:30 +0200
+
 autossh (1.4e-1) experimental; urgency=low
 
   * New upstream release.
