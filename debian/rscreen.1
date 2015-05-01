@@ -1,0 +1,31 @@
+.TH RSCREEN 1
+.SH NAME
+rscreen \- monitor and restart remote screen session
+.SH SYNOPSIS
+.B rscreen
+[\fIautossh\fR or \fIssh options\fR]
+<\fIhost\fR>
+
+.SH DESCRIPTION
+.B rscreen
+is a script to use \fBautossh\fR to open up a remote \fBscreen\fR or
+\fBtmux\fR session, or reconnect to an existing one.
+
+Based on autossh's original \fBrscreen\fR example script as installed
+on Debian systems into \fI/usr/share/doc/autossh/examples/rscreen\fR,
+but with more generally usable defaults.
+
+.SH SEE ALSO
+.BR ssh (1),
+.BR autossh (1),
+.BR screen (1),
+.BR tmux (1)
+
+.SH AUTHOR
+.B rscreen 
+was written by Carson Harding (2002) and Axel Beckert (2011).
+
+.SH COPYRIGHT
+Redistribution and use in source and binary forms, with or without
+modification, are freely permitted.
+
