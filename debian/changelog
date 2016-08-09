@@ -1,6 +1,7 @@
 autossh (1.4e-3) UNRELEASED; urgency=medium
 
   * Switch Vcs-* headers to https:// and cgit web interface.
+  * Declare compliance with Debian Policy 3.9.8. (No changes needed.)
 
  -- Axel Beckert <abe@debian.org>  Tue, 09 Aug 2016 23:17:49 +0200
 
