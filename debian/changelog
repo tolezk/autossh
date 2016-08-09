@@ -1,8 +1,12 @@
 autossh (1.4e-3) UNRELEASED; urgency=medium
 
+  [ Axel Beckert ]
   * Switch Vcs-* headers to https:// and cgit web interface.
   * Declare compliance with Debian Policy 3.9.8. (No changes needed.)
   * Enable all hardening flags.
+
+  [ Alexandre Delanoë ]
+  * Add man pages for rscreen and rtmux. (Closes: #781939)
 
  -- Axel Beckert <abe@debian.org>  Tue, 09 Aug 2016 23:17:49 +0200
 
