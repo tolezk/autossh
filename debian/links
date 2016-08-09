@@ -1,3 +1,5 @@
 /usr/share/man/man1/ssh-argv0.1.gz /usr/share/man/man1/autossh-argv0.1.gz
 /usr/bin/rscreen /usr/bin/rtmux
 /usr/bin/rscreen /usr/bin/ruscreen
+/usr/share/man/man1/rscreen.1.gz /usr/share/man/man1/rtmux.1.gz
+/usr/share/man/man1/rscreen.1.gz /usr/share/man/man1/ruscreen.1.gz

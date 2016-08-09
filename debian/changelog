@@ -6,7 +6,7 @@ autossh (1.4e-3) UNRELEASED; urgency=medium
   * Enable all hardening flags.
 
   [ Alexandre Delanoë ]
-  * Add man pages for rscreen and rtmux. (Closes: #781939)
+  * Add man pages for rscreen, ruscreen and rtmux. (Closes: #781939)
 
  -- Axel Beckert <abe@debian.org>  Tue, 09 Aug 2016 23:17:49 +0200
 
