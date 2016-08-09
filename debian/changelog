@@ -1,3 +1,9 @@
+autossh (1.4e-4) UNRELEASED; urgency=medium
+
+  * Apply wrap-and-sort.
+
+ -- Axel Beckert <abe@debian.org>  Wed, 10 Aug 2016 00:07:39 +0200
+
 autossh (1.4e-3) unstable; urgency=medium
 
   [ Axel Beckert ]
