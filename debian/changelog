@@ -1,6 +1,7 @@
 autossh (1.4e-4) UNRELEASED; urgency=medium
 
   * Apply wrap-and-sort.
+  * Remove all implicitly created directories from debian/dirs.
 
  -- Axel Beckert <abe@debian.org>  Wed, 10 Aug 2016 00:07:39 +0200
 
