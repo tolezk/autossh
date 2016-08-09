@@ -1,4 +1,4 @@
-autossh (1.4e-3) UNRELEASED; urgency=medium
+autossh (1.4e-3) unstable; urgency=medium
 
   [ Axel Beckert ]
   * Switch Vcs-* headers to https:// and cgit web interface.
@@ -8,7 +8,7 @@ autossh (1.4e-3) UNRELEASED; urgency=medium
   [ Alexandre Delanoë ]
   * Add man pages for rscreen, ruscreen and rtmux. (Closes: #781939)
 
- -- Axel Beckert <abe@debian.org>  Tue, 09 Aug 2016 23:17:49 +0200
+ -- Axel Beckert <abe@debian.org>  Wed, 10 Aug 2016 00:01:24 +0200
 
 autossh (1.4e-2) unstable; urgency=medium
 
