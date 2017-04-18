@@ -2,6 +2,10 @@ autossh (1.4e-4) UNRELEASED; urgency=medium
 
   * Apply wrap-and-sort.
   * Remove all implicitly created directories from debian/dirs.
+  * Bump debhelper compat level to 10.
+    + Update versioned build-dependency on debhleper accordingly.
+    + Remove build-dependencies on autoconf and autotools-dev.
+    + Remove "--with autotools-dev" from debian/rules.
 
  -- Axel Beckert <abe@debian.org>  Wed, 10 Aug 2016 00:07:39 +0200
 
