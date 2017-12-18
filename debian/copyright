@@ -63,7 +63,7 @@ License: ISC-OpenBSD-Flavour
  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 Comment: See also
- http://cvsweb.openbsd.org/cgi-bin/cvsweb/~checkout~/src/share/misc/license.template?content-type=text/plain
+ https://cvsweb.openbsd.org/cgi-bin/cvsweb/~checkout~/src/share/misc/license.template?content-type=text/plain
 
 License: ISC-MirOS-Flavour
  Permission to use, copy, modify, and/or distribute this software for any
