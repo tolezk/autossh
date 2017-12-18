@@ -10,6 +10,7 @@ autossh (1.4e-4) UNRELEASED; urgency=medium
     + debian/copyright: Update DEP5 format URL to HTTPS.
   * Remove trailing whitespace from ancient debian/changelog entries.
   * debian/copyright: Switch license.template URL to HTTPS.
+  * Set "Rules-Requires-Root: no".
 
  -- Axel Beckert <abe@debian.org>  Wed, 10 Aug 2016 00:07:39 +0200
 
