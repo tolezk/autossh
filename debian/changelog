@@ -1,4 +1,4 @@
-autossh (1.4e-4) UNRELEASED; urgency=medium
+autossh (1.4e-4) unstable; urgency=medium
 
   * Apply wrap-and-sort.
   * Remove all implicitly created directories from debian/dirs.
@@ -13,7 +13,7 @@ autossh (1.4e-4) UNRELEASED; urgency=medium
   * Set "Rules-Requires-Root: no".
   * Drop debian/README.source, obsolete since 1.4c-2.
 
- -- Axel Beckert <abe@debian.org>  Wed, 10 Aug 2016 00:07:39 +0200
+ -- Axel Beckert <abe@debian.org>  Wed, 20 Dec 2017 04:05:24 +0100
 
 autossh (1.4e-3) unstable; urgency=medium
 
