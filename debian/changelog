@@ -11,6 +11,7 @@ autossh (1.4e-4) UNRELEASED; urgency=medium
   * Remove trailing whitespace from ancient debian/changelog entries.
   * debian/copyright: Switch license.template URL to HTTPS.
   * Set "Rules-Requires-Root: no".
+  * Drop debian/README.source, obsolete since 1.4c-2.
 
  -- Axel Beckert <abe@debian.org>  Wed, 10 Aug 2016 00:07:39 +0200
 
