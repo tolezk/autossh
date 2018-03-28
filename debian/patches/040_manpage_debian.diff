@@ -1,12 +1,10 @@
 Add debian-specific behaviour to the man page.
 
-Index: autossh/autossh.1
-===================================================================
---- autossh.orig/autossh.1	2015-02-13 00:54:14.088481102 +0100
-+++ autossh/autossh.1	2015-02-13 00:54:14.084481034 +0100
-@@ -269,6 +269,12 @@
- .Fl M
- flag. A value of 0 turns the monitoring function off.
+--- a/autossh.1
++++ b/autossh.1
+@@ -280,6 +280,12 @@
+ socket is closed on the server side if the connection closes on the
+ client side.
  .El
 +.Sh DEBIAN-SPECIFIC BEHAVIOR
 +The debian version of autossh uses a wrapper to automatically select a free

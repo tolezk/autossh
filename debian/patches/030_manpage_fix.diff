@@ -1,9 +1,7 @@
 Fix some stuff in the man page. (Should be better sent to upstream. :-)
 
-Index: autossh/autossh.1
-===================================================================
---- autossh.orig/autossh.1	2015-02-13 00:54:07.164358025 +0100
-+++ autossh/autossh.1	2015-02-13 00:54:07.160357961 +0100
+--- a/autossh.1
++++ b/autossh.1
 @@ -60,7 +60,6 @@
  .Nm
  tries to distinguish the manner of death of the ssh process it
@@ -57,23 +55,10 @@ Index: autossh/autossh.1
  set, sets the log output to stdout, and changes the behaviour on ssh
  exit so that it will restart even on a normal exit.
  .It Ev AUTOSSH_PATH
-@@ -262,15 +263,18 @@
- adjusted downward to 1/2 the poll time.
- .It Ev AUTOSSH_PORT
- Sets the connection monitoring port. Mostly in case ssh appropriates
---M at some time. But because of this possible use, AUTOSSH_PORT
--overrides the -M flag. A value of 0 turns the monitoring function off.
-+.Fl M
-+at some time. But because of this possible use, AUTOSSH_PORT
-+overrides the
-+.Fl M
-+flag. A value of 0 turns the monitoring function off.
- .El
- .Sh AUTHOR
- .Nm
- was written by Carson Harding.
- .Sh SEE ALSO
+@@ -286,7 +287,7 @@
  .Xr ssh 1 ,
+ .Xr ssh_config 5,
+ .Xr sshd_config 5,
 -.Xr ssh-add 1 ,
 -.Xr ssh-agent 1 ,
 -.Xr ssh-keygen 1 ,

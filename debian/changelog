@@ -1,3 +1,11 @@
+autossh (1.4f-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+    + Drop patch 022_pass_ldflags.diff, applied upstream.
+    + Refresh remaining patches where necessary.
+
+ -- Axel Beckert <abe@debian.org>  Thu, 29 Mar 2018 00:17:47 +0200
+
 autossh (1.4e-4) unstable; urgency=medium
 
   * Apply wrap-and-sort.

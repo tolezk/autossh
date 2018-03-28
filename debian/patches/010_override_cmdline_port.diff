@@ -1,10 +1,8 @@
 Switches priority of -M commandline option and $AUTOSSH_PORT environment variable.
 
-Index: autossh/autossh.c
-===================================================================
---- autossh.orig/autossh.c	2011-11-19 02:48:58.000000000 +0100
-+++ autossh/autossh.c	2011-11-19 02:49:09.000000000 +0100
-@@ -183,7 +183,7 @@
+--- a/autossh.c
++++ b/autossh.c
+@@ -192,7 +192,7 @@
  	if (code) {
  		fprintf(stderr, "\n");
  		fprintf(stderr, 
@@ -13,7 +11,7 @@ Index: autossh/autossh.c
  		    " environment\n"
  		    "       variable AUTOSSH_PORT. 0 turns monitoring"
  		    " loop off.\n"
-@@ -282,14 +282,17 @@
+@@ -292,14 +292,17 @@
  	 */
  	get_env_args();
  
@@ -33,7 +31,7 @@ Index: autossh/autossh.c
  				writep = optarg;
  			break;
  		case 'V':
-@@ -313,9 +316,6 @@
+@@ -323,9 +326,6 @@
  		}
  	}
  
@@ -43,7 +41,7 @@ Index: autossh/autossh.c
  
  	/*
  	 * We must at least have a monitor port and a remote host.
-@@ -409,7 +409,7 @@
+@@ -419,7 +419,7 @@
  				continue;
  			}
  		}
@@ -52,7 +50,7 @@ Index: autossh/autossh.c
  			add_arg("-L");
  			add_arg(wmbuf);
  			if (!echop) {
-@@ -417,7 +417,8 @@
+@@ -427,7 +427,8 @@
  				add_arg(rmbuf);
  			}
  			done_fwds = 1;
