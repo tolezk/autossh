@@ -10,6 +10,7 @@ autossh (1.4f-1) UNRELEASED; urgency=medium
   * Add a DEP12 upstream metadata file.
   * Update 030_manpage_fix.diff to fix some newly introduced issues in the
     man page. Refresh 040_manpage_debian.diff accordingly.
+  * Make all patch headers DEP3-compliant.
 
  -- Axel Beckert <abe@debian.org>  Thu, 29 Mar 2018 00:17:47 +0200
 

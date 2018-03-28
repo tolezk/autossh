@@ -1,4 +1,4 @@
-Support for $DESTDIR in the Makefile.
+Description: Support for $DESTDIR in the Makefile.
 
 Index: autossh/Makefile.in
 ===================================================================

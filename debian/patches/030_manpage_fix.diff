@@ -1,4 +1,6 @@
-Fix some stuff in the man page. (Should be better sent to upstream. :-)
+Description: Fix some stuff in the man page
+ Should be better sent to upstream. :-)
+Forwarded: no
 
 --- a/autossh.1
 +++ b/autossh.1

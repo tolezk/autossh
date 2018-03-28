@@ -1,4 +1,7 @@
-Add debian-specific behaviour to the man page.
+Description: Add debian-specific behaviour to the man page.
+Bug-Debian: https://bugs.debian.org/238150
+Forwarded: no
+Author: Filippo Giunchedi <filippo@debian.org>
 
 --- a/autossh.1
 +++ b/autossh.1

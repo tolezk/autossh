@@ -1,4 +1,5 @@
-Switches priority of -M commandline option and $AUTOSSH_PORT environment variable.
+Description: Switches priority of -M commandline option and $AUTOSSH_PORT environment variable
+Bug-Debian: https://bugs.debian.org/238150
 
 --- a/autossh.c
 +++ b/autossh.c
