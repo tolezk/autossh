@@ -55,7 +55,24 @@ Fix some stuff in the man page. (Should be better sent to upstream. :-)
  set, sets the log output to stdout, and changes the behaviour on ssh
  exit so that it will restart even on a normal exit.
  .It Ev AUTOSSH_PATH
-@@ -286,7 +287,7 @@
+@@ -269,16 +270,13 @@
+ There are two particular OpenSSH options that are useful when using
+ .Nm
+ :
+-.Fp
+ .Cm ExitOnForwardFailure=yes
+ on the client side to make sure forwardings
+ have succeeded when autossh assumes the connection is setup properly.
+-.Fp
+ .Cm ClientAliveInterval
+ on the server side to make sure the listening
+ socket is closed on the server side if the connection closes on the
+ client side.
+-.El
+ .Sh AUTHOR
+ .Nm
+ was written by Carson Harding.
+@@ -286,7 +284,7 @@
  .Xr ssh 1 ,
  .Xr ssh_config 5,
  .Xr sshd_config 5,

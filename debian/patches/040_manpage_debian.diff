@@ -2,10 +2,10 @@ Add debian-specific behaviour to the man page.
 
 --- a/autossh.1
 +++ b/autossh.1
-@@ -280,6 +280,12 @@
+@@ -277,6 +277,12 @@
+ on the server side to make sure the listening
  socket is closed on the server side if the connection closes on the
  client side.
- .El
 +.Sh DEBIAN-SPECIFIC BEHAVIOR
 +The debian version of autossh uses a wrapper to automatically select a free
 +monitoring port and
