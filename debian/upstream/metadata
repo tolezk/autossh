@@ -1,0 +1,7 @@
+%YAML 1.1
+---
+# https://wiki.debian.org/UpstreamMetadata
+Changelog: http://www.harding.motd.ca/autossh/CHANGES.txt
+Contact: Carson Harding <harding@motd.ca>
+Name: autossh
+Homepage: http://www.harding.motd.ca/autossh/
