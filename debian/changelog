@@ -5,6 +5,8 @@ autossh (1.4f-1) UNRELEASED; urgency=medium
     + Refresh remaining patches where necessary.
   * Move packaging git repository to Salsa and update Vcs-* headers.
   * Declare compliance with Debian Policy 4.1.3. (No changes needed.)
+  * Bump debhelper compatibility level to 11.
+    + Update versioned debhelper build-dependency accordingly.
 
  -- Axel Beckert <abe@debian.org>  Thu, 29 Mar 2018 00:17:47 +0200
 
