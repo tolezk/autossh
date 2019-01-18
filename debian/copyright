@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: autossh
 Upstream-Contact: Carson Harding <harding@motd.ca>
-Source: http://www.harding.motd.ca/autossh/
+Source: https://www.harding.motd.ca/autossh/
 
 Files: *
 Copyright: 2002-2015 Carson Harding <harding@motd.ca>

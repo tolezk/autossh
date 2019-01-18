@@ -3,6 +3,7 @@ autossh (1.4g-1) UNRELEASED; urgency=medium
   * Drop 020_use_destdir_makefile.diff, solved by upstream in 1.4f, too.
   * New upstream release 1.4g
     + Refresh patch 010_override_cmdline_port.diff.
+  * Switch all occurrences of upstream URL to HTTPS.
 
  -- Axel Beckert <abe@debian.org>  Fri, 18 Jan 2019 01:57:47 +0100
 

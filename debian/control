@@ -6,7 +6,7 @@ Uploaders: Franziska Lichtblau <rhalina@old-forest.org>
 Build-Depends: debhelper (>= 11~),
                openssh-client
 Build-Conflicts: autoconf2.13
-Homepage: http://www.harding.motd.ca/autossh/
+Homepage: https://www.harding.motd.ca/autossh/
 Vcs-Git: https://salsa.debian.org/debian/autossh.git
 Vcs-Browser: https://salsa.debian.org/debian/autossh
 Standards-Version: 4.1.3
