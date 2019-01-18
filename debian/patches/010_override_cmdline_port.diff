@@ -3,7 +3,7 @@ Bug-Debian: https://bugs.debian.org/238150
 
 --- a/autossh.c
 +++ b/autossh.c
-@@ -192,7 +192,7 @@
+@@ -193,7 +193,7 @@
  	if (code) {
  		fprintf(stderr, "\n");
  		fprintf(stderr, 
@@ -12,7 +12,7 @@ Bug-Debian: https://bugs.debian.org/238150
  		    " environment\n"
  		    "       variable AUTOSSH_PORT. 0 turns monitoring"
  		    " loop off.\n"
-@@ -292,14 +292,17 @@
+@@ -293,14 +293,17 @@
  	 */
  	get_env_args();
  
@@ -32,7 +32,7 @@ Bug-Debian: https://bugs.debian.org/238150
  				writep = optarg;
  			break;
  		case 'V':
-@@ -323,9 +326,6 @@
+@@ -324,9 +327,6 @@
  		}
  	}
  
@@ -42,7 +42,7 @@ Bug-Debian: https://bugs.debian.org/238150
  
  	/*
  	 * We must at least have a monitor port and a remote host.
-@@ -419,7 +419,7 @@
+@@ -417,7 +417,7 @@
  				continue;
  			}
  		}
@@ -51,7 +51,7 @@ Bug-Debian: https://bugs.debian.org/238150
  			add_arg("-L");
  			add_arg(wmbuf);
  			if (!echop) {
-@@ -427,7 +427,8 @@
+@@ -425,7 +425,8 @@
  				add_arg(rmbuf);
  			}
  			done_fwds = 1;
