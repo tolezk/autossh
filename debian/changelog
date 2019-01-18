@@ -6,6 +6,8 @@ autossh (1.4g-1) UNRELEASED; urgency=medium
     + Now properly detects the loss of its terminal. (Closes: #611739)
   * Switch all occurrences of upstream URL to HTTPS.
   * Declare compliance with Debian Policy 4.3.0. (No changes needed.)
+  * Bump debhelper compatibility level to 12.
+    + Replace debian/compat with a versioned b-d on debhelper-compat.
 
  -- Axel Beckert <abe@debian.org>  Fri, 18 Jan 2019 01:57:47 +0100
 
