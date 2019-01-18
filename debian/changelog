@@ -5,6 +5,7 @@ autossh (1.4g-1) UNRELEASED; urgency=medium
     + Refresh patch 010_override_cmdline_port.diff.
     + Now properly detects the loss of its terminal. (Closes: #611739)
   * Switch all occurrences of upstream URL to HTTPS.
+  * Declare compliance with Debian Policy 4.3.0. (No changes needed.)
 
  -- Axel Beckert <abe@debian.org>  Fri, 18 Jan 2019 01:57:47 +0100
 
