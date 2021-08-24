@@ -1,3 +1,9 @@
+autossh (1.4g-2) UNRELEASED; urgency=medium
+
+  * Bump debhelper-compat to 13.
+
+ -- Axel Beckert <abe@debian.org>  Tue, 24 Aug 2021 11:08:54 +0200
+
 autossh (1.4g-1) unstable; urgency=medium
 
   * Drop 020_use_destdir_makefile.diff, solved by upstream in 1.4f, too.

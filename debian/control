@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Axel Beckert <abe@debian.org>
 Uploaders: Franziska Lichtblau <rhalina@old-forest.org>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
                openssh-client
 Build-Conflicts: autoconf2.13
 Homepage: https://www.harding.motd.ca/autossh/
