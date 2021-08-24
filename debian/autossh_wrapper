@@ -51,4 +51,4 @@ if [ $? -gt 0 ] && [ -z "$AUTOSSH_PORT" ]; then
 	export AUTOSSH_PORT="$portguess"
 fi
 
-exec /usr/lib/autossh/autossh "$@"
+exec /usr/libexec/autossh/autossh "$@"

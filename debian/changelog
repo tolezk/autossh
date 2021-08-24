@@ -4,6 +4,8 @@ autossh (1.4g-2) UNRELEASED; urgency=medium
   * Drop debian/lintian-overrides as package-contains-broken-symlink is no
     more emitted by lintian.
   * Bump debian/watch version to 4.
+  * Move binary /usr/lib/autossh/autossh to /usr/libexec/autossh/autossh.
+    Thanks Lintian!
 
  -- Axel Beckert <abe@debian.org>  Tue, 24 Aug 2021 11:08:54 +0200
 
