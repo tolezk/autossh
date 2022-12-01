@@ -134,6 +134,7 @@ int	net_timeout = TIMEO_NET; /* timeout on network data */
 char	*ssh_path = SSH_PATH;	/* default path to ssh */
 int	start_count;		/* # of times exec()d ssh */
 time_t	start_time;		/* time we exec()d ssh */
+int	to_use_grace_time = 1;	/* to use grace time mechanic */
 
 #if defined(__CYGWIN__)
 int	ntservice;		/* set some stuff for running as nt service */
@@ -209,56 +210,59 @@ usage(int code)
 		fprintf(stderr, "\n");
 		fprintf(stderr, "Environment variables are:\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_GATETIME    "
+		    "    AUTOSSH_GATETIME      "
 		    "- how long must an ssh session be established\n"
-		    "                        "
+		    "                          "
 		    "  before we decide it really was established\n"
-		    "                        "
+		    "                          "
 		    "  (in seconds). Default is %d seconds; use of -f\n"
-		    "                        "
+		    "                          "
 		    "  flag sets this to 0.\n", GATE_TIME);
 		fprintf(stderr, 
-		    "    AUTOSSH_LOGFILE     "
+		    "    AUTOSSH_LOGFILE       "
 		    "- file to log to (default is to use the syslog\n"
-		    "                        "
+		    "                          "
 		    "  facility)\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_LOGLEVEL    "
+		    "    AUTOSSH_LOGLEVEL      "
 		    "- level of log verbosity\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_MAXLIFETIME "
+		    "    AUTOSSH_MAXLIFETIME   "
 		    "- set the maximum time to live (seconds)\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_MAXSTART    "
+		    "    AUTOSSH_MAXSTART      "
 		    "- max times to restart (default is no limit)\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_MESSAGE     "
+		    "    AUTOSSH_MESSAGE       "
 		    "- message to append to echo string (max 64 bytes)\n");
 #if defined(__CYGWIN__)
 		fprintf(stderr, 
-		    "    AUTOSSH_NTSERVICE   "
+		    "    AUTOSSH_NTSERVICE     "
 		    "- tweak some things for running under cygrunsrv\n");
 #endif
 		fprintf(stderr, 
-		    "    AUTOSSH_PATH        "
+		    "    AUTOSSH_PATH          "
 		    "- path to ssh if not default\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_PIDFILE     "
+		    "    AUTOSSH_PIDFILE       "
 		    "- write pid to this file\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_POLL        "
+		    "    AUTOSSH_POLL          "
 		    "- how often to check the connection (seconds)\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_FIRST_POLL  "
+		    "    AUTOSSH_FIRST_POLL    "
 		    "- time before first connection check (seconds)\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_PORT        "
+		    "    AUTOSSH_PORT          "
 		    "- port to use for monitor connection\n");
 		fprintf(stderr, 
-		    "    AUTOSSH_DEBUG       "
+		    "    AUTOSSH_DEBUG         "
 		    "- turn logging to maximum verbosity and log to\n"
-		    "                        "
+		    "                          "
 		    "  stderr\n");
+		fprintf(stderr,
+		    "    AUTOSSH_NO_GRACE_TIME "
+		    "- turn off grace time mechanic\n");
 		fprintf(stderr, "\n");
 	}
 	exit(code);
@@ -681,6 +685,10 @@ get_env_args(void)
 		if (*s != '\0')
 			pid_file_name = s;
 
+	if ((s = getenv("AUTOSSH_NO_GRACE_TIME")) != NULL) {
+		to_use_grace_time = 0;
+	}
+
 #if defined(__CYGWIN__)
 	if ((s = getenv("AUTOSSH_NTSERVICE")) != NULL) {
 		if (*s != '\0' && strncasecmp("yes", s, strlen(s)) == 0) {
@@ -728,7 +736,9 @@ ssh_run(int sock, char **av)
 			return P_EXITOK;
 		restart_ssh = 0;
 		start_count++;
-		grace_time(start_time);
+		if (to_use_grace_time) {
+			grace_time(start_time);
+		}
 		if (exit_signalled) {
 			errlog(LOG_ERR, "signalled to exit");
 			return P_EXITERR;
